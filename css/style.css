@@ -1,0 +1,214 @@
+/* Geral */
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', 'Roboto+Slab', 'Sans';
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    
+}
+
+h2, h3, a, p {
+    font-family: 'Montserrat', 'Roboto+Slab', 'Sans';
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    
+}
+
+/* Nav > Navegação */
+
+nav {
+    background-color: #63458a;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav img{
+    width: 50%;
+}
+
+nav ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 10px;
+    padding: 30px;
+}
+
+/* Header > Cabeçalho */
+
+header {
+    background: url(../img/bg-banner-claro.png) center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+
+header p {
+    color: white;
+}
+
+.botao {
+    background-color: #b288c0;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    display: block;
+    max-width: 180px;
+    margin: 10px auto;
+}
+
+/* Seção Sobre */
+
+.sobre p {
+    margin: 0;
+    color: white;
+}
+
+.sobre {
+    background-color: #b288c0;
+    padding: 6%;
+}
+
+.sobre img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    -display: block;
+}
+
+/* Seção Mulheres */
+
+
+
+.container-mulheres, h2, p {
+    color: #63458a;
+}
+
+.container-mulheres {
+    background-color: #f3eaf3;
+    background-size: cover;
+    padding: 15%;
+    -width: 100%;
+}
+
+.grid-mulheres {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 1em;
+    -max-width: 40px; 
+    
+}
+
+.grid-mulheres > div:first-child {
+    display: none;
+}
+
+/* Seção criadoras */
+ 
+.container-criadoras {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #7e5a9b;
+    background-size: cover;
+    padding: 1%;
+}
+
+.container-criadoras h2 {
+    color: white;
+    margin: 0;
+    margin-bottom: 10px
+}
+
+.grid-criadoras {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 1em;
+    margin: 0 auto;
+    width: 80%;   
+    
+}
+
+/* Footer */
+
+.top-nav {
+    background-color: rgb(41, 39, 39);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .top-nav ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+} */
+
+.top-nav li {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo p {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+}
+
+.redes img {
+    width: 5%;
+}
+
+.logo img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.redes p {
+    color: white;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: rgb(78, 78, 78);
+}
+
+.footer-bottom p {
+    color: white;
+    font-size: 10px;  
+}

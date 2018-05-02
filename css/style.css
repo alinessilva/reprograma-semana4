@@ -8,6 +8,10 @@ img {
     width: 100%;
 }
 
+.img-grid-roxo {
+    border-radius: 5px;
+}
+
 a {
     text-decoration: none;
 }
@@ -24,16 +28,6 @@ h2, h3, a, p {
     text-align: center;
     color: white;
     font-size: 15px;
-    
-}
-
-@media (min-width: 1024px) {
-    h2, h3, p {
-        font-size: 40px;
-    }
-    a {
-        font-size: 15px;
-    }
 }
 
 /* Nav > Navegação */
@@ -46,35 +40,12 @@ nav {
     align-items: center;
 }
 
-@media (min-width: 1024px){
-    nav {
-        background-position: center;
-    }
-}
-
 nav img{
     width: 50%;
 }
 
 nav ul {
     display: none;
-}
-
-@media (min-width: 1024px) {
-    nav ul {
-        display: flex;
-        margin: 0;
-    }
-    
-    li {
-        list-style: none;
-        display: inline;
-        margin: 25px;
-    }
-    
-    nav div > img {
-        display: none;
-    }
 }
 
 /* Header > Cabeçalho */
@@ -89,17 +60,6 @@ header {
     padding: 10%;
 }
 
-@media (min-width: 1024px){
-    header {
-        justify-content: flex-start;
-        align-items: unset;
-        padding: 17% 0% 2% 10%;
-    }
-    header div {
-        width: 50%;
-    }
-}
-
 header p {
     color: white;
 }
@@ -108,24 +68,9 @@ header h1{
     text-transform: uppercase;
 }
 
-@media (min-width: 1024px) {
-    h1 {
-        font-size: 25px;
-    }
-    p {
-        font-size: 15px;
-    }
-}
-
 header div p, header div h1 {
     text-align: center;
     width: 100%;
-}
-
-@media (min-width: 1024px){
-    header div p, header div h1{
-        text-align: left;
-    }
 }
 
 .botao {
@@ -136,13 +81,6 @@ header div p, header div h1 {
     display: block;
     max-width: 180px;
     margin: 10px auto;
-}
-
-@media (min-width: 1024px){
-    header .botao{
-        padding: 20px;
-        margin: 10px 0;
-    }
 }
 
 /* Seção Sobre */
@@ -161,64 +99,51 @@ header div p, header div h1 {
     width: 50%;
     display: block;
     margin: 0 auto;
-    -display: block;
 }
 
 /* Seção Mulheres */
 
 .container-mulheres h2, p {
     color: #63458a;
+    margin-bottom: 35px;
 }
 
 .container-mulheres {
     background-color: #f3eaf3;
     background-size: cover;
-    padding: 5%;
-    -width: 100%;
+    padding: 3%;
 }
 
 .grid-mulheres {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    grid-gap: 5em; 
-}
-
-@media (min-width: 1024px){
-    .grid-mulheres{
-        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-        grid-gap: 5em;
-        max-width: 40px;
-    }
-}
-
-.grid-mulheres > div:first-child {
-    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
 }
 
 /* Seção criadoras */
  
 .container-criadoras {
-    width: 100%;
     margin: 0 auto;
     background-color: #7e5a9b;
     background-size: cover;
-    padding: 1px;
+    padding: 3%;
 }
 
 .container-criadoras h2 {
     color: white;
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
     
 }
 
 .grid-criadoras {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
-    grid-gap: 1em;
-    margin: 0 auto;
-    width: 80%;   
-    
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-column-gap: 5%;
+    grid-row-gap: 1em;
+    max-width: 60%;
+    margin: 20px auto;
 }
 
 /* Footer */
@@ -267,6 +192,7 @@ header div p, header div h1 {
 
 .redes p {
     color: white;
+    margin-bottom: 15px;
 }
 
 .footer-bottom {
@@ -281,3 +207,122 @@ header div p, header div h1 {
     color: white;
     font-size: 10px;  
 }
+
+/* Media Queries*/
+
+/* Geral */
+
+@media (min-width: 1024px) {
+    h2, h3, p {
+        font-size: 40px;
+    }
+    a {
+        font-size: 15px;
+    }
+}
+
+/* Nav > Navegação */
+
+@media (min-width: 1024px){
+    nav {
+        background-position: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul {
+        display: flex;
+        margin: 0;
+    }
+    
+    li {
+        list-style: none;
+        display: inline;
+        margin: 25px;
+    }
+    
+    nav div > img {
+        display: none;
+    }
+}
+
+/* Header > Cabeçalho */
+
+@media (min-width: 1024px){
+    header {
+        justify-content: flex-start;
+        align-items: unset;
+        padding: 17% 0% 2% 10%;
+    }
+    header div {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    h1 {
+        font-size: 25px;
+    }
+    p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1024px){
+    header div p, header div h1{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px){
+    header .botao{
+        padding: 20px;
+        margin: 10px 0;
+    }
+}
+
+/* Seção Sobre */
+
+@media (min-width: 1024px){
+    .sobre p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .sobre img {
+        width: 30%;
+    }
+}
+
+/* Seção Mulheres */
+
+@media (min-width: 767px){
+    .grid-mulheres{
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        grid-column-gap: 15%;
+        grid-row-gap: 1em;
+        max-width: 50%;
+        margin: 0 auto;
+    }
+}
+
+ @media (max-width: 767px){
+    .grid-mulheres > div:first-child {
+        display: none;
+    }
+}
+
+/* Seção Criadoras */
+
+@media (max-width: 767px) {
+    .grid-criadoras {
+        max-width: 94%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        margin: 15px auto;
+        
+    }
+}
+

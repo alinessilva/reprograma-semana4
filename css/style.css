@@ -4,9 +4,7 @@ body {
     margin: 0;
 }
 
-img {
-    width: 100%;
-}
+
 
 .img-grid-roxo {
     border-radius: 5px;
@@ -58,6 +56,20 @@ header {
     justify-content: space-around;
     align-items: center;
     padding: 10%;
+    margin-top: -1px;
+}
+
+.personalidade {
+    background: url(../img/lais-banner.jpg) center;
+    background-size: cover;
+    background-size: 100%;
+    padding: 20%;
+    margin-top: -1px;
+}
+
+.personalidade h1 {
+    margin: 0 auto;
+
 }
 
 header p {
@@ -120,6 +132,10 @@ header div p, header div h1 {
     grid-gap: 3em;
 }
 
+.grid-mulheres img {
+    border-radius: 5px;
+}
+
 /* Seção criadoras */
  
 .container-criadoras {
@@ -151,8 +167,8 @@ header div p, header div h1 {
 .footer-nav {
     background-color: rgb(41, 39, 39);
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
@@ -172,6 +188,7 @@ header div p, header div h1 {
     color: white;
     margin: 0;
     font-size: 14px;
+    font-style: italic;   
 }
 
 .redes img {
@@ -193,6 +210,7 @@ header div p, header div h1 {
 .redes p {
     color: white;
     margin-bottom: 15px;
+    font-weight: bolder;
 }
 
 .footer-bottom {
@@ -201,14 +219,78 @@ header div p, header div h1 {
     align-items: center;
     font-size: 10px;
     background-color: rgb(78, 78, 78);
+    height: 30px;
 }
 
 .footer-bottom p {
     color: white;
-    font-size: 10px;  
+    font-size: 10px;
+    margin-top: 35px;
 }
 
+/* PERFIL PERSONALIDADE */
+
+.title p {
+    font-size: 25px;
+    color: #7e5a9b;
+}
+
+.container img {
+    width: auto;
+    /*object-fit: contain;*/
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.item-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.item-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row: 1;
+}
+
+.item-3 {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 2;
+}
+
+.highlight p {
+    border: 2px solid #63458a;
+    line-height: 30px;
+}
+
+.box {
+  padding: 1em;
+  line-height: 30px;
+}
+
+.box p {
+    text-align: left;
+}
+
+
+
+
 /* Media Queries*/
+
+/*@media (max-width: 688px) {
+    img {
+        width: 100%;
+    }
+}*/
+
 
 /* Geral */
 
@@ -321,8 +403,22 @@ header div p, header div h1 {
         max-width: 94%;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
-        margin: 15px auto;
-        
+        margin: 15px auto;  
     }
 }
+
+/* Footer */
+
+@media (max-width: 767px) {
+    .footer-nav {
+        background-color: rgb(41, 39, 39);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+
 
